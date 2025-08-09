@@ -50,7 +50,7 @@ export const myworks = [
     id: "03",
     name: "Weather App",
     img: project2,
-    para:"QuickMart is a full-featured e-commerce web application developed using the MongoDB, Express.js, React.js, Node.js and also use ..."
+    para:"Developed a responsive weather application using HTML5, CSS3, JavaScript, and OpenWeatherMap API to fetch and display ..."
   },
 
 ]
