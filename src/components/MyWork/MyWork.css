@@ -1,0 +1,95 @@
+.mywork{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 50px;
+}
+.mywork-title{
+    display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+}
+.mywork-title div{
+display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.mywork-title h1{
+font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.mywork .github{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--dribble);
+  width: 12%;
+  padding: 10px 0 ;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.mywork-container {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.mywork-showmore {
+  width: fit-content;
+  display: inline-flex;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--body);
+}
+
+.mywork-showmore:hover{
+  transition: 0.6s;
+  border-bottom: 2px solid var(--primary-color);
+}
+.mywork-showmore:hover .icon{
+    color: rgb(114, 158, 143);
+}
+.mywork-format {
+  height: 450px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--bg-shade);
+  gap: 15px;
+}
+.project-img-container{
+  height: 60%;
+  width: 100%;
+  background-color: var(--body);
+}
+.project-img-container img{
+  height: 100%;
+  width: 100%;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 25px ;
+}
+.project h4{
+font-size: 22px;
+}
+.project p{
+color: var(--body);
+  line-height: 25px;
+  max-width: 350px;
+  font-size: 16px;
+}
