@@ -68,7 +68,7 @@ function Contact() {
           <input type="email" id="email" placeholder="Enter your email" name="email" required/>
           <label htmlFor="message">Write your message here</label>
           <textarea type="text" id="message" placeholder="Enter your message" name="message" rows="4" required/>
-          <button className="contact-submit" type="submit" disabled={result === "Sending...."}>
+          <button className="contact-submit btn" type="submit" disabled={result === "Sending...."}>
             {result === "Sending...." ? "Sending..." : "Submit now"}</button>
         </form>
       </div>

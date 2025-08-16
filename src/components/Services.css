@@ -1,75 +1,191 @@
-
 .services {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
-  padding: 50px;
+  padding: 0 5%;
 }
-.services-title{
+
+.services-title {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2vmax;
   width: 100%;
+  margin-bottom: 5vw;
 
 }
-.services-title p{
-  font-size: 16px;
-font-weight: 600;
-}
-.services-title h1{
-    font-size: 50px;
-    font-weight: 700;
-    text-align: left;
+
+.services-title p {
+  font-size: var(--laptop-large-heading2);
+  font-weight: 600;
 }
 
-.services-container{
+.services-title h1 {
+  text-align: left;
+  font-size: var(--laptop-large-heading);
+
+}
+
+.services-container {
+  height: auto;
   width: 100%;
-  height: 400px;
   display: flex;
-  margin-bottom: 80px;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-
 }
 
-.services-format{
-  height: 320px;
-  min-width: 180px;
+.services-format {
+  height: 340px;
+  width: 300px;
   display: flex;
   align-items: start;
   flex-direction: column;
-  justify-content: center;
-  padding: 20px;
+  padding: 1.5vw;
   border-radius: 10px;
   border: 2px solid #fff;
   cursor: pointer;
   transition: 0.3s;
+  gap: 1vw;
   background-color: var(--bg-shade);
-  gap: 15px;
 }
 
-.services-format .icon{
+.services-format .icon {
   background-color: #fff;
-  padding: 20px;
-  font-size: 22px;
+  padding: 0.8vw 1.2vw;
+  font-size: 1.2vw;
   color: rgb(114, 158, 143);
 }
 
 
-.services-format h4{
-  font-size: 22px;
-
+.services-format h4 {
+  letter-spacing: 0.1vmax;
+  font-size: var(--laptop-large-c-heading);
 }
 
-.services-format p{
+.services-format p {
   color: var(--body);
-  line-height: 28px;
-  max-width: 350px;
-  font-size: 18px;
+  font-size: var(--laptop-large-para);
+  text-align: justify;
+  line-height: 2vmax;
+  max-width: 300px;
 }
 
-.services-format:hover{
+.services-format:hover {
   border-bottom: 4px solid var(--primary-color);
+}
+
+@media (max-width:1024px) {
+
+  .services-format h4 {
+    font-size: var(--laptop-c-heading)
+  }
+    .services-title p{
+      font-size: var(--laptop-heading2);
+    }
+    .services-title h1{
+      font-size: var(--laptop-heading);
+    }
+
+  .services-format {
+    height: 300px;
+    width: 220px;
+    padding: 1.8vw;
+
+  }
+  .services-format p{
+    font-size: var(--laptop-para);
+  }
+    .services-format .icon {
+      padding: 1vw 1.4vw;
+      font-size: 1.5vw;
+    }
+}
+
+@media (max-width:768px) {
+  .services {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .services-format {
+    /* width: 295px; */
+    width: calc(50% - 10px);
+    height: 50%;
+    padding: 3vw;
+    gap: 2.5vw;
+  }
+
+  .services-container {
+    flex-wrap: wrap;
+  }
+
+  .services-format h4 {
+    font-size: var(--tablet-c-heading);
+    word-spacing: 20px;
+  }
+
+  .services-format p {
+    font-size: var(--tablet-para);
+    line-height: 2.5vw;
+  }
+
+    .services-format .icon {
+      padding: 1.5vw 2vw;
+      font-size: 2vw;
+    }
+             .services-title p {
+               font-size: var(--tablet-heading2);
+             }
+
+
+
+}
+
+@media (max-width:426px) {
+        
+          .services-format {
+            width: calc(50% - 5px);
+            gap: 2.5vw;
+          }
+        
+          .services-container {
+            flex-wrap: wrap;
+          }
+        
+          .services-format h4 {
+            text-align: left;
+            font-size: var(--mobile-large-c-heading);
+            word-spacing: -2px;
+          }
+        
+          .services-format p {
+            font-size: var(--mobile-large-para);
+            line-height:4.4vw;
+          }
+
+                    .services-format:nth-child(1){
+                      height: calc(50% + 20px);
+                    }
+        
+          .services-format .icon {
+            padding: 2vw 3vw;
+            font-size: 4vw;
+          }
+
+                    .services-title p {
+                      font-size: var(--mobile-large-heading2);
+                    }
+          
+                    .services-title h1 {
+                      font-size: var(--mobile-large-heading);
+          
+                    }
+
+}
+
+@media (max-width:376px) {
+  .services-format{
+    width: 100%;
+    padding: 5vw;
+  }
 }

@@ -15,7 +15,7 @@ export const services = [
   {
     id: "02",
     icon: <FaDatabase />,
-    name: "Database Design & Manage",
+    name: "Database Design & Management",
     para: "Expertise in MongoDB with Mongoose for schema design, efficient CRUD operations, data modeling, and optimizing queries for performance."
   },
   {
@@ -28,7 +28,7 @@ export const services = [
     id: "04",
     icon: <FaBug />,
     name: "Maintenance & Bug Fixing",
-    para: "Provide continuous support including bug fixes, performance optimization, UI enhancements, and security updates to keep applications running smoothly."
+    para: "Provide continuous support including bug fixes, performance optimization, UI enhancements and security updates to keep applications running smoothly."
   }
 ];
 
@@ -37,20 +37,26 @@ export const myworks = [
   {
     id: "01",
     name: "Task Manager",
-    img: "",
-    para:"Task Manager App is a full-stack productivity application built using the MongoDB, Express.js, React.js, Node.js. It allows users to create ..."
+    img: quick2,
+    para:"Task Manager App is a full-stack productivity application built using the MongoDB, Express..."
   },
   {
     id: "02",
     name: "Quick Mart",
     img: quick1,
-    para: "QuickMart is a full-featured e-commerce web application developed using the MongoDB, Express.js, React.js, Node.js and also use ..."
+    para: "QuickMart is a full-featured e-commerce web application developed using the MongoDB..."
   },
   {
     id: "03",
     name: "Weather App",
     img: project2,
-    para:"Developed a responsive weather application using HTML5, CSS3, JavaScript, and OpenWeatherMap API to fetch and display ..."
+    para:"Developed a responsive weather application using HTML5,CSS3, JavaScript, and OpenWeather..."
+  },
+  {
+    id: "04",
+    name: "Weather App",
+    img: project2,
+    para: "Developed a responsive weather application using HTML5,CSS3, JavaScript, and OpenWeather..."
   },
 
 ]

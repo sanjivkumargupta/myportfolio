@@ -1,95 +1,252 @@
-.mywork{
+.mywork {
+  /* width: 100%; */
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-    padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+  padding: 0 5%;
 }
-.mywork-title{
-    display: flex;
-      width: 100%;
-      justify-content: space-between;
-      align-items: center;
+
+.mywork-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.mywork-title div{
-display: flex;
+
+.mywork-title div {
+  display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.mywork-title h1{
-font-size: 50px;
+
+.mywork-title div h3 {
+  font-size: var(--laptop-large-heading2);
+}
+
+.mywork-title h1 {
+  font-size: var(--laptop-large-heading1);
   font-weight: 700;
   text-align: left;
 }
 
-.mywork .github{
+.mywork .github {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1vw;
   background-color: var(--dribble);
-  width: 12%;
-  padding: 10px 0 ;
-  border-radius: 10px;
+  border-radius: 0.8vw;
   color: #fff;
 }
 
 .mywork-container {
   width: 100%;
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .mywork-showmore {
-  width: fit-content;
   display: inline-flex;
-  gap: 5px;
-  font-size: 16px;
-  font-weight: 500;
+  gap: 0.5vw;
+  font-size: 1.2vw;
   cursor: pointer;
   color: var(--body);
 }
 
-.mywork-showmore:hover{
+.mywork-showmore:hover {
   transition: 0.6s;
   border-bottom: 2px solid var(--primary-color);
 }
-.mywork-showmore:hover .icon{
-    color: rgb(114, 158, 143);
+
+.mywork-showmore:hover .icon {
+  color: rgb(114, 158, 143);
 }
+
 .mywork-format {
-  height: 450px;
-  flex: 1;
+  height: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  gap: 1.5vw;
+  padding: 1vw 1.5vw;
   background-color: var(--bg-shade);
-  gap: 15px;
 }
-.project-img-container{
-  height: 60%;
+
+.project-img-container {
+  height: 65%;
   width: 100%;
-  background-color: var(--body);
+  border: 2px solid black;
+  border-radius: 0.8vw;
+  background-color: var(--bg-shade);
 }
-.project-img-container img{
+
+.project-img-container img {
   height: 100%;
   width: 100%;
+  border-radius: 0.8vw;
+  object-fit: cover;
+  object-position: center;
+  background-color: red;
 }
-.project{
+
+.project {
+  height: 35%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 5px 25px ;
+  gap: 0.6vw;
 }
-.project h4{
-font-size: 22px;
+
+.project h4 {
+  font-size: var(--laptop-large-c-heading)
 }
-.project p{
-color: var(--body);
-  line-height: 25px;
-  max-width: 350px;
-  font-size: 16px;
+
+.project p {
+  color: var(--body);
+  line-height: 1.4vw;
+  font-size: var(--laptop-large-para)
+}
+
+
+@media (max-width:1024px) {
+
+
+  .mywork-title div h3 {
+    font-size: var(--laptop-heading2);
+  }
+
+  .mywork-title h1 {
+    font-size: var(--laptop-heading1);
+  }
+
+  .mywork-format {
+    height: 360px;
+    width: 220px;
+    padding: 1.8vw;
+
+  }
+
+  .project h4 {
+    font-size: var(--laptop-c-heading)
+  }
+
+  .project p {
+    line-height: 1.6vw;
+    font-size: var(--laptop-para)
+  }
+
+  .mywork-showmore {
+    font-size: 1.35vw;
+  }
+
+}
+
+@media (max-width:768px) {
+  .mywork{
+    padding: 0 10%;
+  }
+  .mywork-container {
+    flex-wrap: wrap;
+  }
+
+  .mywork-title div h3 {
+    font-size: var(--tablet-heading2);
+  }
+
+  .mywork-title h1 {
+    font-size: var(--tablet-heading1);
+  }
+
+  .mywork-format {
+    height: 50%;
+    width: calc(50% - 15px);
+    padding: 2.2vw;
+
+  }
+
+  .project h4 {
+    font-size: var(--tablet-c-heading)
+  }
+
+  .project p {
+    line-height: 2.8vw;
+    font-size: var(--tablet-para)
+  }
+
+  .mywork-showmore {
+    font-size: 2vw;
+  }
+
+
+
+}
+
+@media (max-width:426px) {
+
+  .mywork-title div h3 {
+    font-size: var(--mobile-large-heading2);
+  }
+
+  .mywork-title h1 {
+    font-size: var(--mobile-large-heading1);
+  }
+
+  .mywork .github {
+    font-size: 3vw;
+  }
+
+  .mywork-format {
+    height: 340px;
+    width: calc(50% - 15px);
+    padding: 2.2vw;
+
+  }
+
+  .project-img-container {
+    height: 55%;
+  }
+
+  .project h4 {
+    font-size: var(--mobile-large-c-heading)
+  }
+
+  .project p {
+    line-height: 3.5vw;
+    font-size: var(--mobile-large-para)
+  }
+
+  .mywork-showmore {
+    font-size: 3vw;
+  }
+
+}
+
+@media (max-width:376px) {
+  .project {
+    margin-top: 4vw;
+    gap: 4vw;
+  }
+
+  .project p {
+    line-height: 3.8vw;
+  }
+
+  .mywork-format {
+    width: 100%;
+    padding: 5vw;
+  }
+
+  .mywork-showmore {
+    font-size: 3.5vw;
+  }
+
+  .project p {
+    line-height: 5vw;
+    font-size: 4vw;
+  }
+
 }

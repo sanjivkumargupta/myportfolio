@@ -8,9 +8,9 @@ function Hero() {
   return (
     <div className='hero' id='hero'>
         <div className="hero-left">
-          <p>Hey, I am Sanjiv</p>
+        <p>Hey, I am Sanjiv</p>
         <h1>I'm a <span>Mern Stack Developer </span> based in India</h1>
-        <p>Hey there! I’m a full-stack MERN developer from Sultanpur,Uttar Pradesh.
+        <p>Hey there! I’m a  MERN Stack Developer from Sultanpur,Uttar Pradesh.
           I turn ideas into powerful web applications using React, Node, Express & MongoDB.
           Currently growing through hands-on projects and continuous learning.</p>
         <div className="hero-action">
@@ -21,8 +21,9 @@ function Hero() {
           </div>  
           <div className="hero-right">
               <div className="hero-right-img">
+                <img src={photo} alt="" />
               </div>
-        <img src={photo} alt="" />
+            
           </div>
     </div>
   )

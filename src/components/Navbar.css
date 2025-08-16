@@ -1,76 +1,214 @@
-
-.navbar-container{
+.navbar-container {
   top: 0%;
-height: 100px ;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  position: fixed;
-  align-items: center;
-  padding: 0 80px;
-  bottom: 100px;
-  z-index: 10;
-  background-color: #fff;
-}
-.navbar{
-  height: 50px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
   align-items: center;
-}
-.nav-color{
-  color: var(--primary-color)
+  bottom: 100px;
+  z-index: 5;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px  var(--body);
+  padding:  0 5%;
 }
 
-.nav-logo{
-  font-size: 25px;
-}
-.navbar p{
+
+.nav-logo {
+  height: 100%;
   font-weight: 600;
-
+  font-size: 3.2vw;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -0.9vw;
+  color: red;
 }
-.nav-menu{
-  width: 484px;
-  height: 32px;
+
+.nav-menu {
+  height: 100%;
   list-style-type: none;
   align-items: center;
   display: flex;
-  font-size: 22px;
-  justify-content: space-between;
-}
-.nav-menu li p{
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom:5px ;
-  color: var(--body);
-}
-.nav-color{
-  /* color: var(--primary-color);
-   */
-  color: var(--primary-color) !important;
-   /* background-color: red; */
-}
-.nav-contact{
-  /* padding: 15px 30px; */
-  width: 140px;
-  height: 100%;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.5s;
-  border: 2px solid var(--primary-color);
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-.nav-contact p{
-  color: var(--primary-color);
+  gap: 2vw;
 }
 
-.nav-contact:hover{
-  scale: 1.1;
+.nav-menu li{
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.anchor-link{
+
+.nav-menu li p {
+  font-size: 1.2vw;
+  color: var(--body);
+}
+
+.nav-color {
+
+  border-bottom: 4px solid red;
+}
+
+.nav-contact {
+  transition: 0.5s;
+  border: 2px solid crimson;
+  border-radius: 0.5vw;
+}
+
+
+.nav-contact p {
+  color: red;
+  font-size: 1.2vw;
+}
+
+.nav-contact:hover {
+  scale: 1.15;
+  box-shadow: 0px 0px 4px 0px red;
+}
+.anchor-link {
   text-decoration: none;
   color: #fff;
+}
+
+.navbar-container .icon {
+  font-weight: 600;
+  display: none;
+}
+
+/* sidebar  */
+.side-bar{
+  top: 0%;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100vh;
+  width: 50%;
+  background-color: rgb(242, 26, 26);
+  padding: 5% 2%;
+  display: none;
+}
+.side-bar .icon{
+  color:rgb(119, 7, 29);
+  border: 2px solid black;
+  font-weight: 900;
+  font-size: 3.5vw;
+}
+.side-bar-ul {
+  list-style-type: none;
+  padding: 0 5%;
+  margin: 0;
+}
+.side-bar-ul li {
+  color: #000;
+  margin: 2vw 0;
+  padding: 2vw;
+}
+.side-bar-ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 3.8vw;
+}
+.side-bar-ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.navbar-container .icon:hover {
+  color: blue;
+  cursor: pointer;
+}
+.navbar-container .icon:active {
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+/* media query */
+
+@media (max-width:1024px) {
+  
+  .navbar-container {
+    height: 80px;
+  }
+
+  .nav-menu li p {
+    font-size: 1.4vw;
+  }
+
+  .nav-menu {
+    gap: 2.2vw;
+  }
+  .nav-logo{
+    font-size: 3.2vw;
+  }
+
+
+}
+
+
+
+@media (max-width:768px){
+
+  .navbar-container{
+    padding: 0 10%;
+  }
+     .navbar-container {
+       height: 70px;
+     }
+  
+     .nav-menu li p {
+       font-size: 1.6vw;
+     }
+  
+     .nav-menu {
+       gap: 2.5vw;
+     }
+    
+         .nav-contact p {
+           color: red;
+           font-size: 1.5vw;
+         }
+}
+
+@media (max-width:426px) {
+  .side-bar{
+    display: block;
+  }
+  .navbar-container .icon {
+    display: block;
+    font-size: 5vw;
+  }
+.nav-logo{
+  letter-spacing: -2vw;
+}
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar-container {
+    height: 65px;
+  }
+
+  .nav-contact {
+    display: none;
+  }
+  .nav-logo{
+    font-size: 7vw;
+    }
+
+}
+
+
+@media (max-width:375px) {
+  .navbar-container .icon {
+    font-size: 7.5vw;
+  }
+  .nav-logo {
+    font-size: 7.5vw;
+  }
+    .side-bar ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 5vw;
+    }
 }

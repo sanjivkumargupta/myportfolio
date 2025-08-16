@@ -12,15 +12,14 @@ function MyWork() {
       <div className="mywork-title">
         <div><h3>Recent Projects</h3>
           <h1>My Projects</h1></div>
-        <div className="github"><SiGithub className="github-icon" /><span>Visit on Github</span></div>
+        <div className="github btn"><SiGithub className="github-icon" /><span>Visit on Github</span></div>
 
       </div>
       <div className="mywork-container">
         {
           myworks.map(({ id, icon, name, para,img }) => {
-            console.log(img);
             
-            return <div className="mywork-format" key={id}>
+            return <div className="mywork-format" key={id} style={{marginBottom:"15px"}}>
               <div className="project-img-container">
                 <img src={img? img : ""} alt="" />
               </div>

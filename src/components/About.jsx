@@ -6,7 +6,7 @@ import photo from "/photo.png"
 function About() {
   return (
     <div className='about' id='about'>
-      <div className="about-sections">
+      {/* <div className="about-sections"> */}
         <div className="about-left">
           <img src={photo} alt="" />
         </div>
@@ -21,34 +21,35 @@ function About() {
           </div>
           <div className="about-skills">
             <div className="about-skill">
-              <p>HTML5 </p><hr style={{ width: "63%" }} /></div>
+              <p>HTML5 </p><div className="range"><hr style={{ width: "100%" }} /></div>
+              </div>
             <div className='about-skill'>
-              <p>CSS3</p><hr style={{ width: "63%" }} />
+              <p>CSS3</p><div className="range"><hr style={{ width: "100%" }} /></div>
             </div>
             <div className='about-skill'>
-              <p>TailwindCSS</p><hr style={{ width: "59%" }} />
+              <p>TailwindCSS</p><div className="range"><hr style={{ width: "100%" }} /></div>
             </div>
               <div className='about-skill'>
-                <p>Javascript(ES6+)</p><hr style={{width:"62%"}}/>
+              <p>Javascript(ES6+)</p><div className="range"><hr style={{ width: "98%" }} /></div>
               </div>
               <div className="about-skill">
-                <p>ReactJs </p><hr style={{width:"60%"}}/>
+              <p>ReactJs </p><div className="range"><hr style={{ width: "96%" }} /></div>
               </div>
               <div className="about-skill">
-                <p>NodeJs</p><hr style={{width:"58%"}}/>
+              <p>NodeJs</p><div className="range"><hr style={{ width: "94%" }} /></div>
               </div>
             <div className='about-skill'>
-              <p>ExpressJs</p><hr style={{ width: "58%" }} />
+              <p>ExpressJs</p><div className="range"><hr style={{ width: "95%" }} /></div>
             </div>
               <div className="about-skill">
-                <p>MongoDB</p><hr style={{width:"56%"}}/>
+              <p>MongoDB</p><div className="range"><hr style={{ width: "92%" }} /></div>
               </div>
             <div className='about-skill'>
-              <p>SQL</p><hr style={{ width: "56%" }} />
+              <p>SQL</p><div className="range"><hr style={{ width: "70%" }} /></div>
             </div>
             
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   )

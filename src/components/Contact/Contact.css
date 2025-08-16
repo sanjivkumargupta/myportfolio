@@ -1,47 +1,60 @@
 .contact {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
-  padding: 50px;
+  gap: 5vw;
+  padding: 0 5%;
+  margin-bottom: 5vw;
 }
 
 .contact-title {
-display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 2vw;
   width: 100%;
 
 }
 
 .contact-title h1 {
-  font-size: 50px;
-    font-weight: 700;
-    text-align: left;
+  font-size: var(--laptop-large-heading1);
+  font-weight: 700;
 }
-.contact-section{
+
+.contact-title h4 {
+  font-size: var(--laptop-large-heading2);
+}
+
+.contact-section {
+  width: 100%;
   display: flex;
-  gap: 150px;
+  gap: 5vw;
+  justify-content: space-between;
 }
-contact-left{
+
+.contact-left {
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 
 }
-.contact-left h1{
+
+.contact-left h1 {
   font-size: 40px;
   font-weight: 700;
   padding-bottom: 10px;
   color: var(--body);
 }
-.contact-left p{
+
+.contact-left p {
   max-width: 550px;
   color: var(--body);
-  font-size: 16px;
+  font-size: var(--laptop-large-para);
   line-height: 22px;
 }
-.contact-details{
+
+.contact-details {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -49,59 +62,160 @@ contact-left{
   font-size: 22px;
   margin-top: 40px;
 }
+
 .contact-detail {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.contact-detail p{
+
+.contact-detail p {
   font-size: 18px;
   color: var(--body);
 }
-.contact-right{
+
+.contact-right {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
   padding-right: 20px;
 }
-.contact-right label{
+
+.contact-right label {
   color: var(--body);
-  font-size: 20px;
+  font-size: var(--laptop-large-para);
   font-weight: 500;
 }
-.contact-right input{
+
+.contact-right input {
   border: none;
-  width: 650px;
+  width: 100%;
   height: 50px;
   color: #A0A0A0;
   padding-left: 20px;
   border-radius: 4px;
   background: var(--bg-shade);
-font-size: 20px;
+  font-size: var(--laptop-large-para);
 }
-.contact-right textarea{
-  width: 650px;
+
+.contact-right textarea {
+  width: 100%;
   border: none;
   color: #A0A0A0;
   padding: 15px;
   font-size: 20px;
   border-radius: 4px;
-    background: var(--bg-shade);
+  background: var(--bg-shade);
 }
-.contact-right button{
+
+.contact-right button {
   border: none;
   color: #fff;
   border-radius: 10px;
-  font-size: 22px;
-  padding: 15px 50px;
-  cursor: pointer;
-transition: 0.3s;
-background-color: var(--body);
+  font-size: 1.5vw;
+  transition: 0.3s;
+  background-color: var(--body);
 }
-.contact-right button:hover{
+
+.contact-right button:hover {
   scale: 1.05;
   transition: 0.3s;
 }
 
 
+
+
+
+
+
+@media (max-width:1024px) {
+  .contact-title h1 {
+    font-size: var(--laptop-heading1);
+  }
+
+  .contact-title h4 {
+    font-size: var(--laptop-heading2);
+  }
+
+  .contact-left p {
+    font-size: var(--laptop-para);
+  }
+}
+
+@media (max-width:768px) {
+  .contact {
+    padding: 0 10%;
+  }
+
+  .contact-title h1 {
+    font-size: var(--tablet-heading1);
+  }
+
+  .contact-left p {
+    font-size: var(--tablet-para);
+  }
+
+  .contact-left h1 {
+    font-size: 3.5vw;
+  }
+
+  .contact-title h4 {
+    font-size: var(--tablet-heading2);
+  }
+
+  .contact-detail p {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width:426px) {
+  .contact-section {
+    flex-wrap: wrap;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-left h1 {
+    font-size: 4vw;
+  }
+
+  .contact-title h4 {
+    font-size: var(--mobile-large-heading2);
+  }
+
+  .contact-left p {
+    font-size: var(--mobile-large-para);
+  }
+
+  .contact-right label {
+    font-size: var(--mobile-large-para);
+  }
+
+  .contact-right input {
+    height: 40px;
+    font-size: var(--mobile-large-para);
+  }
+
+  .contact-right textarea {
+    width: 100%;
+    border: none;
+    color: #A0A0A0;
+    padding: 10px;
+    font-size: var(--mobile-large-para);
+    border-radius: 4px;
+    background: var(--bg-shade);
+  }
+
+  .contact-right button {
+    border-radius: 10px;
+    font-size: 2vw;
+    padding: 2vw 3vw;
+
+  }
+}

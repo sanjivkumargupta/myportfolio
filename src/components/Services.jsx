@@ -16,12 +16,12 @@ function Services() {
     <div className="services" id="services">
       <div className="services-title">
         <p>My Skill</p>
-        <h1>My Expertise</h1>
+        <h1 className="h1">My Expertise</h1>
       </div>
       <div className="services-container">
         {
           services.map(({id,icon,name,para})=>{
-            return <div className="services-format" key={id}>
+            return <div className="services-format" key={id} style={{marginBottom:"15px"}}>
                               <div className="icon">{icon}</div>
                               <h4>{name}</h4>
                               <p>{para}</p>

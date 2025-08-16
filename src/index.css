@@ -4,14 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body{
-  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000;
-  font-family: "Roboto", sans-serif;
-  background-color: #fff;
+
 }
 :root{
   --primary-color : #5E3BEE;
@@ -19,19 +13,47 @@ body{
   --dribble : #E62872;
   --heading-color : #282938;
   --body : #1C1E53;
+
+  --laptop-large-heading1:3.2vw;
+  --laptop-large-heading:3vw;
+  --laptop-large-heading2:1.1vw;
+  --laptop-large-para:1.2vw;
+  --laptop-large-c-heading:1.5vw;
+
+  --laptop-heading1: 5vw;
+  --laptop-heading: 4vw;
+    --laptop-heading2: 1.3vw;
+    --laptop-para: 1.5vw;
+  --laptop-c-heading: 1.9vw;
+
+    --tablet-heading1: 4.7vw;
+  --tablet-heading: 4.2vw;
+  --tablet-c-heading: 2.5vw;
+      --tablet-heading2: 1.6vw;
+      --tablet-para: 2.3vw;
+
+      --mobile-large-heading1: 8vw;
+  --mobile-large-heading: 7.5vw;
+  --mobile-large-c-heading: 4vw;
+        --mobile-large-heading2: 2.5vw;
+        --mobile-large-para: 4vw;
+
+            /* --mobile-medium-heading1: 3.5vw;
+              --mobile-medium-heading1: 1.1vw;
+              --mobile-medium-para: 1.1vw;
+
+                  --mobile-small-heading1: 3.5vw;
+                    --mobile-small-heading1: 1.1vw;
+                    --mobile-small-para: 1.1vw; */
+
 }
-.h1{
-  font-size: 56/120px;
-  font-weight: bold;
+.btn{
+  padding: 0.8vw 2vw;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  cursor: pointer;
 }
-.h2 {
-  font-size: 48/120px;
-  font-weight: bold;
-}
-.h3 {
-  font-size: 24/140px;
-  font-weight: bold;
-}
-.sub-title{
-  font-size: 16/150px;
+.no-display{
+  display: none;
 }
